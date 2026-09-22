@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ankur Kharb — Backend Developer</title>
+  <meta name="description" content="Ankur Kharb — backend developer building production APIs with Node.js, Django and PostgreSQL. Portfolio, projects and resume." />
+  <meta name="theme-color" content="#0a0807" />
+  <meta property="og:title" content="Ankur Kharb — Backend Developer" />
+  <meta property="og:description" content="Forged in production. Backend services, APIs and AI products." />
+  <link rel="icon" href="assets/brand.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=IM+Fell+English:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Dragonslayer scroll gauge -->
+  <div class="sword" aria-hidden="true">
+    <svg viewBox="0 0 40 400" preserveAspectRatio="xMidYMin meet">
+      <defs>
+        <clipPath id="blade-clip"><path d="M8 118 L32 118 L32 372 L20 396 L8 372 Z" /></clipPath>
+      </defs>
+      <!-- pommel, grip, guard -->
+      <circle cx="20" cy="10" r="7" class="iron" />
+      <rect x="16" y="16" width="8" height="84" rx="2" class="grip" />
+      <g class="wrap"><path d="M16 26 L24 34 M16 40 L24 48 M16 54 L24 62 M16 68 L24 76 M16 82 L24 90" /></g>
+      <rect x="2" y="100" width="36" height="12" rx="2" class="iron" />
+      <rect x="6" y="112" width="28" height="6" class="iron dark" />
+      <!-- blade -->
+      <path d="M8 118 L32 118 L32 372 L20 396 L8 372 Z" class="blade" />
+      <rect id="blood" x="0" y="118" width="40" height="0" class="blood" clip-path="url(#blade-clip)" />
+      <path d="M20 124 L20 380" class="fuller" />
+    </svg>
+  </div>
+
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top" aria-label="Back to top">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><use href="#brand-mark" /></svg>
+      <span>A.K.</span>
+    </a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links" class="nav__links">
+      <a href="#about">About</a>
+      <a href="#arsenal">Arsenal</a>
+      <a href="#campaigns">Experience</a>
+      <a href="#battles">Projects</a>
+      <a href="#oath">Contact</a>
+      <a class="nav__cta" href="assets/Ankur_Kharb_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="embers" aria-hidden="true"></canvas>
+      <div class="eclipse" aria-hidden="true"><div class="eclipse__sun"></div></div>
+      <div class="hero__inner">
+        <p class="eyebrow">Backend Developer &nbsp;·&nbsp; Noida, India</p>
+        <h1 class="hero__name">Ankur<br />Kharb</h1>
+        <p class="hero__epithet">The Struggler</p>
+        <p class="hero__lead">I forge backend systems that stay standing when the load hits: REST APIs, async pipelines and AI products, built with Node.js, Django and PostgreSQL.</p>
+        <div class="hero__actions">
+          <a class="btn btn--blood" href="#battles">See my battles</a>
+          <a class="btn btn--iron" href="assets/Ankur_Kharb_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#about" aria-label="Scroll to about">
+        <span>Descend</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v14M6 12l6 6 6-6" /></svg>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__num">I</span>
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>The Black Swordsman of the backend</h2>
+        </div>
+      </div>
+      <div class="about reveal">
+        <div class="about__text">
+          <p>I'm a Computer Science engineering graduate and a Backend Developer Intern at <strong>Plutonic Services</strong>, where I build production services for a ride-hailing and logistics platform, an ERP for law firms, and an employee monitoring product.</p>
+          <p>My strengths are in REST API design, authentication, relational data modeling, asynchronous processing and performance. I like the unglamorous parts of a system: the queue that retries, the index that makes search fast, the auth flow that doesn't leak.</p>
+          <blockquote class="quote">“Keep swinging. The system that survives is the one that was stress-tested.”</blockquote>
+        </div>
+        <dl class="stats">
+          <div class="stat"><dt>300+</dt><dd>DSA problems solved on LeetCode</dd></div>
+          <div class="stat"><dt>30%</dt><dd>faster API responses at TCIL</dd></div>
+          <div class="stat"><dt>2×</dt><dd>Smart India Hackathon participant</dd></div>
+          <div class="stat"><dt>100+</dt><dd>day LeetCode streak</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ARSENAL -->
+    <section class="section" id="arsenal">
+      <div class="section__head reveal">
+        <span class="section__num">II</span>
+        <div>
+          <p class="eyebrow">Skills</p>
+          <h2>Arsenal</h2>
+        </div>
+      </div>
+      <div class="arsenal">
+        <article class="weapon reveal">
+          <h3>Languages</h3>
+          <ul class="chips"><li>Java</li><li>Python</li><li>C++</li><li>Go</li><li>JavaScript</li><li>TypeScript</li></ul>
+        </article>
+        <article class="weapon weapon--main reveal">
+          <h3>Backend <em>— the Dragonslayer</em></h3>
+          <ul class="chips"><li>Node.js</li><li>Express.js</li><li>Django</li><li>Django REST Framework</li><li>Spring Boot</li><li>FastAPI</li><li>Flask</li><li>GraphQL</li><li>tRPC</li><li>Celery</li></ul>
+        </article>
+        <article class="weapon reveal">
+          <h3>Frontend</h3>
+          <ul class="chips"><li>React.js</li><li>Next.js</li><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li></ul>
+        </article>
+        <article class="weapon reveal">
+          <h3>Data</h3>
+          <ul class="chips"><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>MySQL</li><li>Prisma</li><li>Drizzle</li></ul>
+        </article>
+        <article class="weapon reveal">
+          <h3>Forge &amp; Platforms</h3>
+          <ul class="chips"><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>Kafka</li><li>GitHub Actions</li><li>CI/CD</li><li>Git</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAMPAIGNS -->
+    <section class="section" id="campaigns">
+      <div class="section__head reveal">
+        <span class="section__num">III</span>
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>Campaigns</h2>
+        </div>
+      </div>
+      <ol class="timeline">
+        <li class="campaign reveal">
+          <div class="campaign__meta">
+            <span class="campaign__date">June 2026 — Present</span>
+            <span class="campaign__place">Noida, Uttar Pradesh</span>
+          </div>
+          <div class="campaign__body">
+            <h3>Backend Developer Intern <span>· Plutonic Services Pvt. Ltd.</span></h3>
+            <ul>
+              <li>Engineered an end-to-end employee monitoring module using Python and Django REST Framework, integrating Windows/macOS desktop agents with APIs for screenshot capture, idle-time tracking, live presence and manager productivity reports.</li>
+              <li>Developed backend services for a ride-hailing and logistics platform and an ERP for law firms using Node.js, Express.js, Python, Django and DRF.</li>
+              <li>Built secure REST APIs for authentication, booking, wallet, cargo, customer management and reporting with Sequelize, Django ORM and PostgreSQL/MySQL.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="campaign reveal">
+          <div class="campaign__meta">
+            <span class="campaign__date">June 2024 — Dec 2024</span>
+            <span class="campaign__place">Chandigarh, Punjab</span>
+          </div>
+          <div class="campaign__body">
+            <h3>Full Stack Developer Intern <span>· TCIL</span></h3>
+            <ul>
+              <li>Built and optimized MERN applications, improving overall application performance by 25%.</li>
+              <li>Designed RESTful APIs with Node.js and Express.js, cutting API response time by 30% through efficient routing and optimized MongoDB queries.</li>
+              <li>Refactored React components and state management, raising UI responsiveness and code reuse by 20%.</li>
+              <li>Worked in an Agile team on bugs and features, contributing to a 15% drop in reported issues.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- BATTLES -->
+    <section class="section" id="battles">
+      <div class="section__head reveal">
+        <span class="section__num">IV</span>
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2>Battles fought</h2>
+        </div>
+      </div>
+      <div class="battles">
+        <article class="battle battle--feature reveal">
+          <div class="battle__top">
+            <span class="battle__tag">Backend · 2026</span>
+            <div class="battle__links">
+              <a href="https://github.com/ankurkharb/GetHired" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>GetHired</h3>
+          <p class="battle__sub">Job aggregation &amp; recruitment platform</p>
+          <p>Scraped listings and recruiter-posted jobs arrive from two directions; one normalized API serves candidates, recruiters and admins.</p>
+          <ul class="battle__points">
+            <li>PostgreSQL full-text search with ranked filtering, facets and GIN indexes</li>
+            <li>Async Celery ingestion with Redis caching, idempotent upserts, dedup and failure backoff</li>
+            <li>Saved jobs, alerts, resume management and application workflows, documented with OpenAPI</li>
+          </ul>
+          <ul class="chips chips--small"><li>Django</li><li>DRF</li><li>PostgreSQL</li><li>Redis</li><li>Celery</li><li>JWT</li><li>Docker</li></ul>
+        </article>
+
+        <article class="battle reveal">
+          <div class="battle__top">
+            <span class="battle__tag">AI · Code generation</span>
+            <div class="battle__links">
+              <a href="https://buildr-theta.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/ankurkharb/Buildr" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>Buildr.ai</h3>
+          <p class="battle__sub">AI website generator</p>
+          <p>Describe a website in plain English and an AI agent writes a working Next.js app, running the code in isolated E2B sandboxes with a live preview.</p>
+          <ul class="chips chips--small"><li>Next.js</li><li>TypeScript</li><li>OpenAI</li><li>E2B</li><li>tRPC</li><li>Prisma</li><li>Clerk</li></ul>
+        </article>
+
+        <article class="battle reveal">
+          <div class="battle__top">
+            <span class="battle__tag">AI · Voice</span>
+            <div class="battle__links">
+              <a href="https://ai-tutor-five-green.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/ankurkharb/Nova-AI" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>NovaAI</h3>
+          <p class="battle__sub">AI voice interview platform</p>
+          <p>Real-time voice interviews powered by Vapi AI and OpenAI, with automated scoring, feedback, transcript analysis and a dashboard for tracking candidates.</p>
+          <ul class="chips chips--small"><li>Next.js</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Vapi AI</li><li>Inngest</li></ul>
+        </article>
+
+        <article class="battle reveal">
+          <div class="battle__top">
+            <span class="battle__tag">AI · Real-time</span>
+            <div class="battle__links">
+              <a href="https://meet-ai-iota-seven.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/ankurkharb/Meet-AI" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>Meet AI</h3>
+          <p class="battle__sub">AI agents that join your video calls</p>
+          <p>Create custom AI agents that join calls as live participants, talk in real time, then deliver transcripts, summaries and action items after the meeting.</p>
+          <ul class="chips chips--small"><li>Next.js 16</li><li>Stream Video</li><li>OpenAI Realtime</li><li>tRPC</li><li>Drizzle</li><li>Inngest</li></ul>
+        </article>
+
+        <article class="battle reveal">
+          <div class="battle__top">
+            <span class="battle__tag">Frontend · Music</span>
+            <div class="battle__links">
+              <a href="https://seedhe-maut-snowy.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/ankurkharb/SeedheMaut" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>Explore the Music</h3>
+          <p class="battle__sub">Seedhe Maut music player</p>
+          <p>A full-bleed player with YouTube playback, shuffled tracks, synced controls, MP4 motion loops, album-art fallbacks and keyboard shortcuts.</p>
+          <ul class="chips chips--small"><li>React</li><li>TypeScript</li><li>Vite</li><li>YouTube Player API</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- TROPHIES -->
+    <section class="section section--tight" id="trophies">
+      <div class="section__head reveal">
+        <span class="section__num">V</span>
+        <div>
+          <p class="eyebrow">Education &amp; achievements</p>
+          <h2>Scars &amp; trophies</h2>
+        </div>
+      </div>
+      <div class="trophies reveal">
+        <div class="trophy">
+          <h3>Chandigarh Engineering College</h3>
+          <p>B.Tech, Computer Science and Engineering</p>
+          <p class="muted">Aug 2022 — May 2026 · CGPA 7.1/10</p>
+        </div>
+        <ul class="trophy trophy--list">
+          <li>Smart India Hackathon — <a href="https://drive.google.com/file/d/1l51qZbd25ZMezVNmk4z4N4SfzjnCJTL5/view" target="_blank" rel="noopener">2023</a> &amp; <a href="https://drive.google.com/file/d/1mkffZopvy648a2LIUN6NQfwZWXBozKLp/view" target="_blank" rel="noopener">2024</a></li>
+          <li><a href="https://ti-user-certificates.s3.amazonaws.com/ae62dcd7-abdc-4e90-a570-83eccba49043/f994032c-af85-473d-9b05-182470b7042c-ankur-kharb-1868d65f-9d92-44e5-927b-d2ee87085a1d-certificate.pdf" target="_blank" rel="noopener">MongoDB Certified: Atlas Developer</a></li>
+          <li>300+ problems on <a href="https://leetcode.com/u/ankurkharb1234/" target="_blank" rel="noopener">LeetCode</a> with a 100+ day streak</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- OATH / CONTACT -->
+    <section class="oath" id="oath">
+      <svg class="oath__brand" viewBox="0 0 100 100" aria-hidden="true"><use href="#brand-mark" /></svg>
+      <p class="eyebrow">Contact</p>
+      <h2 class="reveal">Need someone who won't stop swinging?</h2>
+      <p class="oath__lead reveal">I'm open to backend and full-stack roles. Send a message and I'll answer.</p>
+      <a class="btn btn--blood btn--big reveal" href="mailto:ankurkharb1234@gmail.com">ankurkharb1234@gmail.com</a>
+      <ul class="socials reveal">
+        <li><a href="https://github.com/ankurkharb" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ankurkharb" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://leetcode.com/u/ankurkharb1234/" target="_blank" rel="noopener">LeetCode</a></li>
+        <li><a href="tel:+918278603793">+91 82786 03793</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Ankur Kharb · Built with struggle, not frameworks.</p>
+    <p class="muted">Fan-made theme inspired by Kentaro Miura's <em>Berserk</em>. All artwork on this page is hand-drawn SVG.</p>
+  </footer>
+
+  <!-- shared symbol: brand mark -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="brand-mark" viewBox="0 0 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 8 L50 92" />
+        <path d="M50 26 C78 26 80 58 50 60" />
+        <path d="M50 60 L28 80" />
+      </g>
+    </symbol>
+  </svg>
+
+  <script src="main.js"></script>
+</body>
+</html>
